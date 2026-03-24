@@ -21,12 +21,6 @@ git clone https://github.com/TriticeaeToolbox/generate-breedbase-templates-skill
 3) Start claude code in that directory ( `claude` )
 4) Use the `/generate-breedbase-templates` command to run the skill.
 
-You can provide additional context about the specific dataset you are processing to the `/generate-breedbase-templates` command, such as:
-
-```
-/generate-breedbase-templates This is a barley trial from Williston, ND in 2025.  The experiment code is WRSBN and the breeding program is "Western Regional Barley Nursery"
-```
-
 ## Output
 
 After running the `/generate-breedbase-templates` command and following any prompts that the AI agent may ask, you should have an `upload_templates/` directory that contains the accessions, trials, and observations templates to upload to breedbase.  The agent should also create a `bin/` directory that contains the python scripts used to generate the upload templates and a `process.sh` script that can be used to re-run the template generation from the source data (note: these scripts are specific to the source data that was used to generate them).
