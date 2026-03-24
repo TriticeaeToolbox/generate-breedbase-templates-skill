@@ -1,0 +1,17 @@
+column_header,required,definition
+accession_name,TRUE,"the unique variety, selection, germplasm, or line name of the accession"
+species_name,TRUE,the genus and species name of the accession
+description,FALSE,a free text description of the stock
+population_name,FALSE,"a population is a grouping of accessions. If the population already exists in the database, the accession will be added to it; otherwise, a new population will be created). Multiple populations can be specified, using the pipe symbol (|) as the separator (for example, pop1|pop2|pop3)"
+organization_name,FALSE,"the name(s) of the organization(s) which use this accession e.g. NARO,IITA"
+synonym,FALSE,"an accession can be known by many names including local popular names. a synonym name can be used instead of the accession_name throughout the database; because of this, synonyms must themselves be unique. e.g. accession_synonym1,accession_synonym001"
+PUI,FALSE,persistent unique identifier
+accession number,FALSE,a registered accession number with an external germplasm database-such as a GRIN PI number
+country of origin,FALSE,"the country where the accession originated.  If the accession is from the United States, this should be set to ""USA"""
+filial generation,FALSE,"generation of offspring produced by a controlled cross between parental organisms. The first filial generation is designated as F1, the second as F2, and so on"
+notes,FALSE,any additional comments about the accession
+purdy pedigree,FALSE,purdy string representing the pedigree - this is often in the form of FEMALE_PARENT/MALE_PARENT
+variety,FALSE,released variety name of the accession
+female_parent,FALSE,"the accession name of the female parent - if the accession does not exist, it will be created"
+male_parent,FALSE,"the accession name of the male parent - if the accession does not exist, it will be created"
+cross_type,FALSE,"the type of cross between the female and male parents - one of: biparental, self, open, backcross, sib, polycross, reselected"
