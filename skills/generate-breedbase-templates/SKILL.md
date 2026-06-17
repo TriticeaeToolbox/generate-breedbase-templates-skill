@@ -13,9 +13,9 @@ This skill is used to reformat spreadsheet files (Excel or CSV files) that conta
 
 ## Training Documentation
 
-The `docs` directory contains comprehensive training documentation based on analysis of all sample datasets:
+The `references/` directory contains comprehensive training documentation based on analysis of all sample datasets:
 
-### [training-guide.md](docs/training-guide.md)
+### [training-guide.md](references/training-guide.md)
 **Complete implementation reference** covering:
 - Three output templates (accessions, trials, observations) detailed specifications
 - Five input format patterns with parsing strategies for each
@@ -26,7 +26,7 @@ The `docs` directory contains comprehensive training documentation based on anal
 
 **Use this for**: Complete implementation reference, understanding conversion formulas, trait ontology lookups
 
-### [sample-analysis.md](docs/sample-analysis.md)
+### [sample-analysis.md](references/sample-analysis.md)
 **Detailed input→output transformations** for all 5 sample datasets:
 - **Sample 1 (UWOYT)**: Multi-sheet Excel with location-specific data - shows how to parse location sheets and extract pedigrees from overall sheets
 - **Sample 2 (SDS)**: Multiple files (one per location) - demonstrates handling multi-file inputs with Cover + data sheets
@@ -38,7 +38,7 @@ Each sample includes: input structure breakdown, output examples, specific conve
 
 **Use this for**: Understanding how different input formats map to outputs, seeing real conversion examples
 
-### [quick-reference.md](docs/quick-reference.md)
+### [quick-reference.md](references/quick-reference.md)
 **Concise cheat sheet** with:
 - Critical conversion factors
 - Most common trait ontology IDs
@@ -51,9 +51,9 @@ Each sample includes: input structure breakdown, output examples, specific conve
 ## Assets
 
 The `assets` directory contains resources that you can use to learn how to generate the breedbase upload templates, such as:
-- sample datasets already converted into upload templates
-- upload template column definitions
-- trait ontology definitions
+- `sample-datasets/` - sample datasets already converted into upload templates
+- `upload-template-column-definitions/` - definitions of the column headers for the accessions and trials upload templates, including which columns are required and which columns are recommended (these columns should be included if there are values for them in the original data).
+- `trait-ontologies/` - trait ontology definitions.  This contains .obo files for the trait ontologies for wheat, oat, and barley.
 
 
 ### Sample Datasets

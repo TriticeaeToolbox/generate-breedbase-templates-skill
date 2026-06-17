@@ -1,0 +1,26 @@
+column_header,required,definition
+trial_name,TRUE,"Must be unique across entire database. It is often a concatenation of the year, transplanting_date, purpose, unique number, and location."
+breeding_program,TRUE,"The name of breeding program that managed the trial, must exist in the database."
+location,TRUE,"The name or abbreviation of the location where the trial was held, must exist in the database."
+year,TRUE,The year the trial was held.
+design_type,TRUE,"The shorthand for the design type, must exist in the database. Possible values include CRD (Completely Randomized Design), RCBD (Randomized Complete Block Design), RRC (Resolvable Row-Column), DRRC (Doubly-Resolvable Row-Column), ARC (Augmented Row-Column), Alpha (Alpha Lattice Design), Lattice (Lattice Design), Augmented (Augmented Design), MAD (Modified Augmented Design), greenhouse (undesigned Nursery/Greenhouse), splitplot (Split Plot), stripplot (Strip Plot / Split Block), p-rep (Partially Replicated), Westcott (Westcott Design)"
+description,TRUE,Additional text with any other relevant information about the trial.
+accession_name,TRUE,"The accession being tested in the plot, must exist in the database."
+plot_number,TRUE,"A sequential number for the plot in the field (e.g. 1001, 1002, 2001, 2002). These numbers should be unique for the trial."
+block_number,TRUE,A design parameter indicating which block the plot is in.
+plot_name,TRUE,"Must be unique across entire database. If not provided in the file, it will be automatically generated as {trial_name}-PLOT_{plot_number}"
+trial_type,FALSE,"The name of the trial type, must exist in the database. Possible values include Seedling Nursery, phenotyping_trial, Advanced Yield Trial, Preliminary Yield Trial, Uniform Yield Trial, Variety Release Trial, Clonal Evaluation, genetic_gain_trial, storage_trial, heterosis_trial, health_status_trial, grafting_trial, Screen House, Seed Multiplication, crossing_block_trial, Specialty Trial"
+plot_width,FALSE,plot width in meters
+plot_length,FALSE,plot length in meters
+field_size,FALSE,field size in hectares
+planting_date,RECOMMENDED,Date of Planting in YYYY-MM-DD format.  This is very important to include if it is found in the data.
+harvest_date,RECOMMENDED,Date of Harvest in YYYY-MM-DD format.  This is very important to include if it is found in the data.
+is_a_control,FALSE,"type 1 in this field if the plot is a control, otherwise 0 or leave blank. generally you will have accessions that are controls, so you should indicate the plots that that accession is in as a control."
+rep_number,RECOMMENDED,"replicate number, must be numeric"
+range_number,FALSE,"range number. often synonymous with col_number, must be numeric"
+row_number,RECOMMENDED,"row number. if the field is a grid, this represents the y coordinate, numeric, required for field map generation."
+col_number,RECOMMENDED,"column number. if the field is a grid, this represents the x coordinate. sometimes called range_number, numeric, required for field map generation."
+seedlot_name,FALSE,the seedlot from where the planted seed originated. must exist in the database
+num_seed_per_plot,FALSE,number seeds per plot. seed is transferred from seedlot mentioned in seedlot_name. Numeric.  Only include this if a seedlot name is provided.
+weight_gram_seed_per_plot,FALSE,weight in gram of seeds in plot. seed is transferred from seedlot mentioned in seedlot name. Numeric. Only include this if a seedlot name is provided.
+entry_number,FALSE,a trial-level entry number assigned to the stock. Numeric
