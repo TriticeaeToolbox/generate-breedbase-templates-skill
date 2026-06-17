@@ -1,0 +1,11 @@
+{
+  "name": "generate-breedbase-templates",
+  "version": "1.0.0",
+  "description": "This plugin contains a skill that can be used to transform breeder data into standardized breedbase upload templates",
+  "author": {
+    "name": "David Waring",
+    "email": "<djw64@cornell.edu>",
+    "url": "https://github.com/dwaring87"
+  },
+  "repository": "https://github.com/TriticeaeToolbox/generate-breedbase-templates-skill"
+}
