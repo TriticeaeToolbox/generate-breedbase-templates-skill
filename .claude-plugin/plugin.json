@@ -1,6 +1,6 @@
 {
   "name": "generate-breedbase-templates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin contains a skill that can be used to transform breeder data into standardized breedbase upload templates",
   "author": {
     "name": "David Waring",
