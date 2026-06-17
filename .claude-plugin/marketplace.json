@@ -1,0 +1,13 @@
+{
+  "name": "T3 Plugins",
+  "owner": {
+    "name": "The Triticeae Toolbox"
+  },
+  "plugins": [
+    {
+      "name": "generate-breedbase-templates",
+      "source": "./",
+      "description": "Plugin for generating breedbase templates"
+    }
+  ]
+}
