@@ -1,17 +1,17 @@
-# Generate Breedbase Templates Skill
+# Generate Breedbase Templates Plugin
 
-This repository contains an [Agent Skill](https://agentskills.io) that can be used to convert raw breeder data into breedbase upload templates using an AI Agent, such as Claude Code.
+This repository is a Claude Code plugin that contains an [Agent Skill](https://agentskills.io) which can be used to convert raw breeder data into breedbase upload templates using an AI Agent, such as Claude Code.
 
 > [!WARNING]
 > As with any AI-generated output, the generated upload templates should be thoroughly checked for mistakes and errors before adding the data to the database.
 
 ## Installation
 
-The exact installation will depend on the AI Agent you are using.  These instructions are for installing a [Claude Code Skill](https://code.claude.com/docs/en/skills):
+The exact installation will depend on the AI Agent you are using.  These instructions are for installing the plugin using [Claude Code](https://code.claude.com/docs/en/discover-plugins):
 
 ```
-mkdir -p ~/.claude/skills/generate-breedbase-templates
-git clone https://github.com/TriticeaeToolbox/generate-breedbase-templates-skill.git ~/.claude/skills/generate-breedbase-templates
+claude plugin marketplace add TriticeaeToolbox/t3-marketplace
+claude plugin install generate-breedbase-templates@t3-marketplace
 ```
 
 ## Usage
